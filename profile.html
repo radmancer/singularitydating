@@ -7,7 +7,7 @@
         <style>
             @font-face {
                 font-family:gothamRoundedMedium;
-                src: url("css/GothamRoundedMedium_21022.ttf");
+                src: url("css/fonts/GothamRoundedMedium_21022.ttf");
             }
             body{
                 font-family:gothamRoundedMedium;
@@ -80,7 +80,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get("id");
         const image = urlParams.get("image");
-        document.getElementById("profile").style.backgroundImage = "url('css/" + image + "')";
+        document.getElementById("profile").style.backgroundImage = "url('css/images/" + image + "')";
         const name = urlParams.get("name");
         const age = urlParams.get("age");
         const profileText = urlParams.get("profile");
