@@ -212,7 +212,7 @@ body {
 /* elements on stacked cards */
 .card-item {
 	background: #FFFFFF;
-	background-image: url("test.jpg");
+	background-image: url("images/test.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 80%;
 	background-size: cover;
