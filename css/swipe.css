@@ -216,4 +216,5 @@ body {
 	background-repeat: no-repeat;
 	background-position: 50% 80%;
 	background-size: cover;
+	position: relative;
 }
