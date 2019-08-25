@@ -3,7 +3,8 @@
         <!--Written and Directed By James Scott McDowell-->
         <title>Singularity</title>
         <link rel="stylesheet" href="css/radlab.css">
-		<link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/swipe.css">
         <style>
             @font-face {
                 font-family:gothamRoundedMedium;
@@ -19,7 +20,7 @@
             .layoutGrid{
                 display:grid;
                 grid-template-columns:1fr 1fr 1fr 1fr;
-                grid-template-rows:60vh 7vh 23vh 10vh;
+                grid-template-rows:45vh 7vh 23vh 10vh;
             }
             .profile{
                 grid-column-start:1;
@@ -73,8 +74,15 @@
         <div id="nameAndAge" class="nameAndAge">Mircama, 888</div>
         <!--Profile Text Character Limit: 162-->
         <div id="profileText" class="profileText">WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</div>
-        <div class="navigation"></div>
-	</div>
+        <div class="navigation">
+            <div class="global-actions">
+                <div class="left-action" onclick="window.location='singularity.html';"><div class="button">&#10007;</div></div>
+                <div class="blackhole-action" onclick="window.location='singularity.html';"><img style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
+                <div class="top-action" onclick="window.location='singularity.html';"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
+                <div class="right-action" onclick="window.location='singularity.html';"><div class="button">&#x2714;</div></div>
+            </div>
+        </div>
+    </div>
     </body>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
