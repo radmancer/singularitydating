@@ -104,9 +104,7 @@ body {
 	opacity: 0;
 	top: 0;
 	height: 100%;
-	font-size: 24px;
-	/* this style was added only for better preview */
-	text-transform: uppercase;
+	font-size: 42px;
 	/* this style was added only for better preview */
 	font-weight: 500;
 	/* this style was added only for better preview */
@@ -115,15 +113,15 @@ body {
 }
 
 .stackedcards-overlay.top {
-	background: #E38568;
+	background:rgb(214, 139, 0);;
 }
 
 .stackedcards-overlay.right {
-	background: #7BB3C5;
+	background: rgb(47, 148, 0);
 }
 
 .stackedcards-overlay.left {
-	background: #E58D93;
+	background: rgb(190, 56, 22);
 }
 
 .stackedcards-overlay.left:empty,
@@ -167,7 +165,7 @@ body {
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	width: 100%;
-	margin-top: 10px;
+	margin-top: 4vh;
 }
 
 .top-action,
