@@ -41,11 +41,52 @@
 				font-size:7vw;
 				color:white;
 			}
+            @font-face {
+                font-family:gothamRoundedMedium;
+                src: url("css/fonts/GothamRoundedMedium_21022.ttf");
+            }
+            @font-face {
+                font-family:gothamRoundedLight;
+                src: url("css/fonts/GothamRounded-Light.otf");
+            }
+            body{
+                background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("css/images/test.jpg");
+                background-position: 50% 80%;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            span{
+                font-family:gothamRoundedMedium;
+                color:white;
+            }
+            .layoutGrid{
+                display:none;
+                grid-template-columns:20vw 20vw 20vw 20vw 20vw;
+                grid-template-rows:10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				z-index: 9999;
+            }
+            .matchTitle{
+                grid-column-start:2;
+                grid-column-end:5;
+                grid-row-start:2;
+                grid-row-end:3;
+                background-color:red;
+            }
+            .keepSwiping{
+                grid-column-start:2;
+                grid-column-end:5;
+                grid-row-start:8;
+                grid-row-end:9;
+                background-color:red;
+            }
 		</style>
 		<script src="js/swipe.js"></script>
 	</head>
 	<body>
-		<div class="verticalCenteringDiv">
+		<div id="content" class="verticalCenteringDiv">
 			<div id="stacked-cards-block" class="stackedcards stackedcards--animatable init">
 				<div class="stackedcards-container">
 					<div id="card0" onclick="document.location='profile.html?id=0&&image=0.jpg&name=Mircama&age=888&profile=I enjoy long walks on the beaches of Centurion 7B: soaking up the Hawking Radiation after a long day of automation maintenance. Life is hard when you have to press 7 buttons a day, or when the robot that cleans the robot cleaning robots has broken down. I%27m just looking for a man/woman/beelzebub/psychic cantaloupe to infect with my memetic viruses at night.';" class="card-item"><span class="nameAgeProfession">Aaron, 31<br>Gainfully Employed</span></div>
@@ -70,11 +111,16 @@
 				<div class="right-action"><div class="button">&#x2714;</div></div>
 			</div>
 		</div>
+		<div id="modal" class="layoutGrid">
+			<div class="matchTitle"></div>
+			<div class="keepSwiping" onclick="document.getElementById('modal').style.visibility='hidden';"></div>
+		</div>
 	</body>
 	<script>
 	    var cardArray = document.getElementsByClassName("card-item");
 		for(var i = 0; i < cardArray.length; i++){
 			cardArray[i].style.backgroundImage = "url('css/images/" + i + ".jpg')";
 		}
+		document.getElementById('modal').style.display='grid';
 	</script>
 </html>
