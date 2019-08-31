@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/radlab.css">
         <link rel="stylesheet" href="css/w3.css">
         <link rel="stylesheet" href="css/swipe.css">
+        <link rel="stylesheet" href="css/modal.css">
         <style>
             @font-face {
                 font-family:gothamRoundedMedium;
@@ -41,7 +42,6 @@
                 border-bottom-style: solid;
                 border-bottom-color: #f0f0f0;
                 border-width: 1px;
-                padding-left:5vw;
                 padding-top:2vw;
             }
             .profileText{
@@ -52,8 +52,6 @@
                 background-color:white;
                 color:#939393;
                 font-size:3vw;
-                padding-left:5vw;
-                padding-right:5vw;
                 padding-top:4vw;
                 border-top-style: solid;
                 border-top-color: #dedede;
@@ -78,10 +76,14 @@
             <div class="global-actions">
                 <div class="left-action" onclick="window.location='singularity.html';"><div class="button">&#10007;</div></div>
                 <div class="blackhole-action" onclick="window.location='singularity.html';"><img style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
-                <div class="top-action" onclick="window.location='singularity.html';"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
-                <div class="right-action" onclick="window.location='singularity.html';"><div class="button">&#x2714;</div></div>
+                <div class="top-action" onclick="showModal();/*window.location='singularity.html';*/"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
+                <div class="right-action" onclick="showModal();/*window.location='singularity.html';*/"><div class="button">&#x2714;</div></div>
             </div>
         </div>
+    </div>
+    <div id="modal" class="modalGrid">
+        <div class="matchTitle"></div>
+        <div class="keepSwiping" onclick="window.location='singularity.html';"></div>
     </div>
     </body>
     <script>
@@ -96,4 +98,5 @@
         document.getElementById("profileText").innerHTML = profileText;
         sessionStorage.id = id;
     </script>
+	<script src="js/modal.js"></script>
 </html>
