@@ -1,5 +1,6 @@
 .modalGrid{
-    display:none;
+    display:grid;
+    visibility: hidden;
     grid-template-columns:20vw 20vw 20vw 20vw 20vw;
     grid-template-rows:10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
     position: absolute;
@@ -22,13 +23,13 @@
     background-color:red;
 }
 .modalGrid2{
-    display:none;
+    display:grid;
     grid-template-columns:20vw 20vw 20vw 20vw 20vw;
     grid-template-rows:10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: 9999;
+    z-index: -9999;
 }
 .facebook{
     grid-column-start:2;
@@ -45,7 +46,8 @@
     background-color:blue;
 }
 .modalGrid3{
-    display:none;
+    display:grid;
+    visibility: hidden;
     grid-template-columns:20vw 20vw 20vw 20vw 20vw;
     grid-template-rows:10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
     position: absolute;
