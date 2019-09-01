@@ -1,18 +1,18 @@
 function showModal(){
-    document.getElementById('modal').style.display='grid';
+    document.getElementById('modal').style.visibility='visible';
 }
 function hideModal(){
-    document.getElementById('modal').style.display='none';
+    document.getElementById('modal').style.visibility='hidden';
 }
 function showModal2(){
-    document.getElementById('modal2').style.display='grid';
+    document.getElementById('modal2').style.visibility='visible';
 }
 function hideModal2(){
-    document.getElementById('modal2').style.display='none';
+    document.getElementById('modal2').style.visibility='hidden';
 }
 function showModal3(){
-    document.getElementById('modal3').style.display='grid';
+    document.getElementById('modal3').style.visibility='visible';
 }
 function hideModal3(){
-    document.getElementById('modal3').style.display='none';
+    document.getElementById('modal3').style.visibility='hidden';
 }
