@@ -216,13 +216,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
         //That's a question for the author. Do look into that.
         if(sessionStorage.id != null && sessionStorage.id != "0"){
             var swipeCount = parseInt(sessionStorage.id);
-            for(var i = 0; i < swipeCount; i++){
+            for(var i = 0; i < swipeCount + 1; i++){
                 //swipe right or swipe top could be used,
                 //Just put a flag into this function stating
                 //that the "unliking" of a person must be ignored.
                 onSwipeLeft();
             }
-		}
+        }
+        
+        //JSM: The bug fix for the first card item not
+        //     being able to swipe on to the next card in the stack.
+        if(sessionStorage.getItem("firstCardExpired") == "true"){
+            onSwipeLeft();
+            sessionStorage.setItem("firstCardExpired", "false");
+        }
 
         //Swipe active card to left.
         function onSwipeLeft() {
