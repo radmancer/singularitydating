@@ -75,7 +75,7 @@
         <div class="navigation">
             <div class="global-actions">
                 <div class="left-action" onclick="window.location='singularity.html';"><div class="button">&#10007;</div></div>
-                <div class="blackhole-action" onclick="window.location='singularity.html';"><img style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
+                <div class="blackhole-action" onclick="playSound();setTimeout(function(){ window.location='singularity.html'; }, 3000);"><img style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
                 <div class="top-action" onclick="showModal();/*window.location='singularity.html';*/"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
                 <div class="right-action" onclick="showModal();/*window.location='singularity.html';*/"><div class="button">&#x2714;</div></div>
             </div>
@@ -85,6 +85,7 @@
         <div class="matchTitle"></div>
         <div class="keepSwiping" onclick="window.location='singularity.html';"></div>
     </div>
+    <audio id="audio" src="media/BlackholeScream.mp3" autostart="0" style="visibility:hidden;"></audio>
     </body>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
@@ -98,5 +99,6 @@
         document.getElementById("profileText").innerHTML = profileText;
         sessionStorage.id = id;
     </script>
-	<script src="js/modal.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/media.js"></script>
 </html>
