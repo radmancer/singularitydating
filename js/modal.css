@@ -1,0 +1,100 @@
+.modalGrid{
+    display:grid;
+    visibility: hidden;
+    grid-template-columns:20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows:10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+.matchTitle{
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:3;
+    background-color:red;
+}
+.keepSwiping{
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:8;
+    grid-row-end:9;
+    background-color:red;
+}
+.modalGrid2{
+    display:grid;
+    grid-template-columns:20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows:10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+.facebookIcon{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:5;
+    grid-row-end:6;
+}
+.facebookLink{
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:5;
+    grid-row-end:6;
+}
+.emailIcon{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:6;
+    grid-row-end:7;
+}
+.emailLink{
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:6;
+    grid-row-end:7;
+}
+.modalGrid3{
+    display:grid;
+    visibility: hidden;
+    grid-template-columns:10vw 30vw 30vw 20vw 10vw;
+    grid-template-rows:10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+.termsAndConditionsModal{
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end:8;
+    background-color:white;
+    font-size:3vw;
+    padding-left:5vw;
+    padding-right:5vw;
+    padding-top:10vh;
+    font-family:gothamRoundedMedium;
+}
+.termsTitle{
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:4;
+    grid-row-end:5;
+    font-family:gothamRoundedMedium;
+    font-size:7vw;
+    padding-left:5vw;
+    padding-top:3vh;
+}
+.modalExit{
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end:5;
+}
+.closeButton{
+	font-family:gothamRoundedMedium;
+	font-size:7vw;
+	color:black;
+}
