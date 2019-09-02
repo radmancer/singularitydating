@@ -15,6 +15,10 @@
 				padding-right:3vw;
 				padding-bottom:1vh;
 			}
+			.modalButtons{
+                font-family:gothamRoundedMedium;
+                color:white;
+            }
 			body {
 				height: 100%;
 				width: 100%;
@@ -64,8 +68,10 @@
 			</div>
 		</div>
 		<div id="modal" class="modalGrid">
-			<div class="matchTitle"></div>
-			<div class="keepSwiping" onclick="hideModal();"></div>
+			<div class="matchTitle centerXY">It's a Match!</div>
+			<div class="matchSubtitle">maybe... (you've seen this before)</div>
+			<div class="sendMessage centerXY largeRadius noselect"><div class="modalButtons">SEND MESSAGE</div></div>
+			<div class="keepSwiping centerXY largeRadius noselect" onclick="hideModal();"><div class="modalButtons">KEEP SWIPING</div></div>
 		</div>
 		<div id="modal2" class="modalGrid2">
 			<div class="facebookIcon centerXY"><i class="fa fa-facebook-official" style="font-size:10vw;color:white;"></i></div>
