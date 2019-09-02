@@ -1,0 +1,16 @@
+@font-face {
+	font-family:gothamRoundedMedium;
+	src: url("fonts/GothamRoundedMedium_21022.ttf");
+}
+
+.button{
+	font-family:gothamRoundedMedium;
+	font-size:7vw;
+	color:white;
+}
+
+.verticalCenteringDiv {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}

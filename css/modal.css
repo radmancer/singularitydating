@@ -68,14 +68,14 @@
 .termsAndConditionsModal{
     grid-column-start:2;
     grid-column-end:5;
-    grid-row-start:2;
-    grid-row-end:3;
-    background-color:green;
+    grid-row-start:4;
+    grid-row-end:8;
+    background-color:white;
 }
 .modalExit{
-    grid-column-start:2;
+    grid-column-start:4;
     grid-column-end:5;
-    grid-row-start:8;
-    grid-row-end:9;
-    background-color:green;
+    grid-row-start:4;
+    grid-row-end:5;
+    background-color:red;
 }
