@@ -207,6 +207,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
 
         function changeOnClick(){
+            if(cardCount == document.getElementsByClassName("card-item").length - 1){
+                document.getElementsByClassName("verticalCenteringDiv")[0].style.visibility="hidden";
+                document.getElementById("modal2").style.zIndex = "0";
+                return;
+            }
             cardCount += 1;
             document.getElementById('cardN').onclick = function() { changeQueryString(cardCount) };
         }
