@@ -29,21 +29,31 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: -9999;
+    z-index: -99999;
 }
-.facebook{
+.facebookIcon{
     grid-column-start:2;
-    grid-column-end:5;
-    grid-row-start:2;
-    grid-row-end:3;
-    background-color:blue;
+    grid-column-end:3;
+    grid-row-start:5;
+    grid-row-end:6;
 }
-.email{
-    grid-column-start:2;
+.facebookLink{
+    grid-column-start:3;
     grid-column-end:5;
-    grid-row-start:8;
-    grid-row-end:9;
-    background-color:blue;
+    grid-row-start:5;
+    grid-row-end:6;
+}
+.emailIcon{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:6;
+    grid-row-end:7;
+}
+.emailLink{
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:6;
+    grid-row-end:7;
 }
 .modalGrid3{
     display:grid;
