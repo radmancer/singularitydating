@@ -14,3 +14,22 @@
 	height: 100%;
 	vertical-align: middle;
 }
+
+.okayFine{
+	grid-column-start:2;
+	grid-column-end:6;
+	grid-row-start:7;
+	grid-row-end:8;
+	font-size:5vw;
+	background-image: linear-gradient(to right, rgb(0, 133, 0) , #00fd00);
+}
+.loginWith{
+	grid-column-start:2;
+	grid-column-end:6;
+	grid-row-start:9;
+	grid-row-end:10;
+	font-size:3vw;
+	background-color: transparent;
+	border-style: solid;
+	border-color: white;
+}
