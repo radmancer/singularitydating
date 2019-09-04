@@ -80,7 +80,7 @@
     font-size:3vw;
     padding-left:5vw;
     padding-right:5vw;
-    padding-top:10vh;
+    padding-top:8vh;
     font-family:gothamRoundedMedium;
 }
 .termsTitle{
@@ -91,7 +91,7 @@
     font-family:gothamRoundedMedium;
     font-size:7vw;
     padding-left:5vw;
-    padding-top:3vh;
+    padding-top:2.5vh;
 }
 .modalExit{
     grid-column-start:4;
