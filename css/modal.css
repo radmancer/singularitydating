@@ -93,6 +93,16 @@
     padding-left:5vw;
     padding-top:2.5vh;
 }
+.telepathicTitle{
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:4;
+    grid-row-end:5;
+    font-family:gothamRoundedMedium;
+    font-size:5vw;
+    padding-left:5vw;
+    padding-top:2.5vh;  
+}
 .modalExit{
     grid-column-start:4;
     grid-column-end:5;
