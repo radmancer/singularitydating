@@ -70,7 +70,7 @@
 		<div id="modal" class="modalGrid">
 			<div class="matchTitle centerXY">It's a Match!</div>
 			<div class="matchSubtitle">maybe... (you've seen this before)</div>
-			<div class="sendMessage centerXY largeRadius noselect"><div class="modalButtons">SEND TELEPATHIC MESSAGE</div></div>
+			<div class="sendMessage centerXY largeRadius noselect" onclick="showModal3();setTimeout(function(){ hideModal3(); }, 3500);"><div class="modalButtons">SEND TELEPATHIC MESSAGE</div></div>
 			<div class="keepSwiping centerXY largeRadius noselect" onclick="hideModal();"><div class="modalButtons">KEEP SWIPING</div></div>
 		</div>
 		<div id="modal2" class="modalGrid2">
@@ -78,6 +78,11 @@
 			<div class="facebookLink centerXY"><a href="https://facebook.com/dropcaddict" style="color:white;font-size:5vw;">Aaron Smith</a></div>
 			<div class="emailIcon centerXY" style="color:white;font-size:10vw"><i class="fa fa-google"></i></div>
 			<div class="emailLink centerXY" style="color:white;font-size:3.5vw">singularitydating@gmail.com</div>
+		</div>
+		<div id="modal3" class="modalGrid3">
+			<div class="termsAndConditionsModal smallRadius"><img style="width:100%;" src="css/images/telepathic_message.gif" /></div>
+			<div class="modalExit centerXY" onclick="document.getElementById('modal3').style.visibility='hidden';"><div class="closeButton">&#10007;</div></div>
+			<div class="telepathicTitle">SENDING MESSAGE...</div> 
 		</div>
 		<audio id="audio" src="media/BlackholeScream.mp3" autostart="0" style="visibility:hidden;"></audio>
 	</body>
@@ -88,5 +93,5 @@
 		}
 	</script>
 	<script src="js/modal.js"></script>
-    <script src="js/media.js"></script>
+	<script src="js/media.js"></script>
 </html>
