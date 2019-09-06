@@ -726,5 +726,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     stackedCards();
-
+    setTimeout(function(){ document.getElementById("modal2").style.visibility = "visible"; }, 1000);
 });
