@@ -36,6 +36,7 @@
     left: 0px;
     top: 0px;
     z-index: -1;
+    visibility: hidden;
 }
 .facebookIcon{
     grid-column-start:2;
@@ -81,6 +82,18 @@
     padding-left:5vw;
     padding-right:5vw;
     padding-top:8.6vh;
+    font-family:gothamRoundedMedium;
+}
+.telepathicContent{
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end:8;
+    background-color:white;
+    font-size:2.9vw;
+    padding-left:5vw;
+    padding-right:5vw;
+    padding-top:7vh;
     font-family:gothamRoundedMedium;
 }
 .termsTitle{
