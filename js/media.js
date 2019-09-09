@@ -1,4 +1,4 @@
-function playSound() {
-    var sound = document.getElementById("audio");
+function playSound(audioName) {
+    var sound = document.getElementById(audioName);
     sound.play();
 }
