@@ -61,10 +61,10 @@
 				<div id="cardN" onclick="document.location='profile.html?id=0&&image=0.jpg&name=Mircama&age=888&profile=I enjoy long walks on the beaches of Centurion 7B: soaking up the Hawking Radiation after a long day of automation maintenance. Life is hard when you have to press 7 buttons a day, or when the robot that cleans the robot cleaning robots has broken down. I%27m just looking for a man/woman/beelzebub/psychic cantaloupe to infect with my memetic viruses at night.';sessionStorage.setItem('firstCardExpired', 'true');" class="stackedcards--animatable stackedcards-overlay left" style="font-family:gothamRoundedMedium;z-index:666;">My mom thinks I'm cool...</div>
 			</div>
 			<div class="global-actions">
-				<div class="left-action"><div class="button">&#10007;</div></div>
+				<div class="left-action" onclick="playSound('audio3');"><div class="button">&#10007;</div></div>
 				<div class="blackhole-action" onclick="playSound('audio');"><img style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
-				<div class="top-action" onclick="showModal();"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
-				<div class="right-action" onclick="showModal();"><div class="button">&#x2714;</div></div>
+				<div class="top-action" onclick="showModal();playSound('audio5');"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
+				<div class="right-action" onclick="showModal();playSound('audio4');"><div class="button">&#x2714;</div></div>
 			</div>
 		</div>
 		<div id="modal" class="modalGrid">
@@ -88,6 +88,9 @@
 		</div>
 		<audio id="audio" src="media/BlackholeScream.mp3" autostart="0" style="visibility:hidden;"></audio>
 		<audio id="audio2" src="media/psionic.mp3" autostart="0" style="visibility:hidden;"></audio>
+		<audio id="audio3" src="media/skip.mp3" autostart="0" style="visibility:hidden;"></audio>
+		<audio id="audio4" src="media/Like.mp3" autostart="0" style="visibility:hidden;"></audio>
+		<audio id="audio5" src="media/duck.mp3" autostart="0" style="visibility:hidden;"></audio>
 	</body>
 	<script>
 	    var cardArray = document.getElementsByClassName("card-item");
