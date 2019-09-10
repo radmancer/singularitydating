@@ -78,7 +78,7 @@
     grid-row-start:7;
     grid-row-end:8;
 }
-.modalGrid3{
+.genericModal{
     display:grid;
     visibility: hidden;
     grid-template-columns:10vw 30vw 30vw 20vw 10vw;
@@ -88,7 +88,7 @@
     top: 0px;
     z-index: 9999;
 }
-.termsAndConditionsModal{
+.termsAndConditionsText{
     grid-column-start:2;
     grid-column-end:5;
     grid-row-start:4;
