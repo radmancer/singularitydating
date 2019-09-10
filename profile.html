@@ -16,25 +16,29 @@
         <div id="profileText" class="profileText">WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</div>
         <div class="navigation">
             <div class="global-actions">
-                <div class="left-action" onclick="window.location='singularity.html';"><div class="button">&#10007;</div></div>
-                <div class="blackhole-action" onclick="playSound();setTimeout(function(){ window.location='singularity.html'; }, 3000);"><img style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
-                <div class="top-action" onclick="showModal();/*window.location='singularity.html';*/"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
-                <div class="right-action" onclick="showModal();/*window.location='singularity.html';*/"><div class="button">&#x2714;</div></div>
+                <div class="left-action" onclick="playSound('skip');setTimeout(function(){ window.location='singularity.html'; }, 1500);"><div class="button">&#10007;</div></div>
+                <div class="blackhole-action" onclick="playSound('scream');setTimeout(function(){ window.location='singularity.html'; }, 3000);"><img style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
+                <div class="top-action" onclick="playSound('duck');showModal('matchModal');"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
+                <div class="right-action" onclick="playSound('like');showModal('matchModal');"><div class="button">&#x2714;</div></div>
             </div>
         </div>
     </div>
-    <div id="modal" class="modalGrid">
+    <div id="matchModal" class="modalGrid">
         <div class="matchTitle centerXY">It's a Match!</div>
         <div class="matchSubtitle">maybe... (you've seen this before)</div>
-        <div class="sendMessage centerXY largeRadius noselect" onclick="showModal3();setTimeout(function(){ hideModal3(); }, 3500);"><div class="modalButtons">SEND TELEPATHIC MESSAGE</div></div>
+        <div class="sendMessage centerXY largeRadius noselect" onclick="showModal('genericModal');playSound('psionic');setTimeout(function(){ hideModal('genericModal'); }, 3500);"><div class="modalButtons">SEND TELEPATHIC MESSAGE</div></div>
         <div class="keepSwiping centerXY largeRadius noselect" onclick="window.location='singularity.html';"><div class="modalButtons">KEEP SWIPING</div></div>
     </div>
-    <div id="modal3" class="modalGrid3">
-			<div class="telepathicContent smallRadius centerXY"><img style="width:80%;" src="css/images/telepathic_message.gif" /></div>
-			<div class="modalExit centerXY" onclick="document.getElementById('modal3').style.visibility='hidden';"><div class="closeButton">&#10007;</div></div>
-			<div class="telepathicTitle">SENDING MESSAGE...</div> 
-		</div>
-    <audio id="audio" src="media/BlackholeScream.mp3" autostart="0" style="visibility:hidden;"></audio>
+    <div id="genericModal" class="genericModal">
+        <div class="telepathicContent smallRadius centerXY"><img style="width:80%;" src="css/images/telepathic_message.gif" /></div>
+        <div class="modalExit centerXY" onclick="hideModal('genericModal');"><div class="closeButton">&#10007;</div></div>
+        <div class="telepathicTitle">SENDING MESSAGE...</div> 
+    </div>
+    <audio id="scream" src="media/BlackholeScream.mp3" autostart="0" style="visibility:hidden;"></audio>
+    <audio id="psionic" src="media/psionic.mp3" autostart="0" style="visibility:hidden;"></audio>
+    <audio id="skip" src="media/skip.mp3" autostart="0" style="visibility:hidden;"></audio>
+    <audio id="like" src="media/Like.mp3" autostart="0" style="visibility:hidden;"></audio>
+    <audio id="duck" src="media/duck.mp3" autostart="0" style="visibility:hidden;"></audio>
     </body>
     <script>
         const urlParams = new URLSearchParams(window.location.search);

@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/w3.css">
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body class="indexPageBody">
         <div class="indexPageLayoutGrid">
@@ -14,7 +15,7 @@
             <div class="legalesePart1 centerXY noselect" style="font-family:gothamRoundedLight;color:white">By tapping "okay
                 fine" you hitherforth agree with our</div>
             <div class="legalesePart2 centerXY noselect" style="font-family:gothamRoundedLight;color:white">
-                <div onclick="showModal3();" style="text-decoration:underline;">Terms of Service</div>&nbsp;and&nbsp;<a
+                <div onclick="showModal('genericModal');" style="text-decoration:underline;">Terms of Service</div>&nbsp;and&nbsp;<a
                     href="https://youtu.be/OMOGaugKpzs?t=15">"Privacy" Policy</a>.
             </div>
             <div class="okayFine centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>OKAY
@@ -25,14 +26,14 @@
             <div class="confidentiality centerXY noselect" style="font-family:gothamRoundedLight;color:white">(We won't tell
                 anyone you're doing this.)</div>
         </div>
-        <div id="modal3" class="modalGrid3">
-            <div class="termsAndConditionsModal smallRadius">Welcome to the nadir of searching for the basic human needs of
+        <div id="genericModal" class="genericModal">
+            <div class="termsAndConditionsText smallRadius">Welcome to the nadir of searching for the basic human needs of
                 love, touch, and understanding. Like a Burger King is to your nutritional health; so too is online dating to
                 your romantic happiness. (or lack thereof) Surely, one may overcome the expenditures of one’s own time,
                 money and mental energy, by, as they say: “putting yourself out there.” But by the gods! Who has time for
                 THAT shit? So let us begin your thumb-sliding journey into the abject HORROR of the personalizes of men on
                 the internet that you will no doubt encounter.</div>
-            <div class="modalExit centerXY" onclick="document.getElementById('modal3').style.visibility='hidden';">
+            <div class="modalExit centerXY" onclick="document.getElementById('genericModal').style.visibility='hidden';">
                 <div class="closeButton">&#10007;</div>
             </div>
             <div class="termsTitle">THE TERMS</div>
