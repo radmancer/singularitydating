@@ -9,6 +9,10 @@
     z-index: 9999;
     background-color: rgba(0, 0, 0, 0.7);
 }
+.modalButtons{
+    font-family:gothamRoundedMedium;
+    color:white;
+}
 .matchTitle{
     font-family:gothamRoundedMedium;
     grid-column-start:2;
