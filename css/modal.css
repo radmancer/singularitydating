@@ -145,7 +145,7 @@
 	grid-row-start:7;
 	grid-row-end:8;
 	font-size:4.5vw;
-	background-image: linear-gradient(to right, rgb(0, 133, 0) , #00fd00);
+	background-image:  linear-gradient(to right, rgb(0, 88, 0) , #00bd00);
 }
 .keepSwiping{
 	grid-column-start:2;
