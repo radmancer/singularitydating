@@ -6,132 +6,72 @@
         <link rel="stylesheet" href="css/w3.css">
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/general.css">
-        <style>
-            @font-face {
-                font-family:gothamRoundedMedium;
-                src: url("css/fonts/GothamRoundedMedium_21022.ttf");
-            }
-            @font-face {
-                font-family:gothamRoundedLight;
-                src: url("css/fonts/GothamRounded-Light.otf");
-            }
-            body{
-                background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("css/images/test.jpg");
-                background-position: 50% 80%;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            span{
-                font-family:gothamRoundedMedium;
-                color:white;
-            }
-            .layoutGrid{
-                display:grid;
-                grid-template-columns:5vw 13vw 10vw 56vw 11vw 5vw;
-                grid-template-rows:26vh 7vh 26vh 2vh 2vh 2vh 8vh 1vh 8vh 6.5vh 1.5vh 10vh;
-            }
-            .logoGraphic{
-                grid-column-start:3;
-                grid-column-end:4;
-                grid-row-start:2;
-                grid-row-end:3;
-                background-image: url("css/images/black_hole.png");
-                filter:invert(100%);
-                background-size:10vw;
-                background-repeat:no-repeat;
-                background-position:50% 50%;
-            }
-            .logoText{
-                grid-column-start:4;
-                grid-column-end:5;
-                grid-row-start:2;
-                grid-row-end:3;
-                font-size:10.7vw;
-                padding-bottom:0.7vh;
-            }
-            .legalesePart1{
-                grid-column-start:1;
-                grid-column-end:7;
-                grid-row-start:4;
-                grid-row-end:5;
-                font-size:2.5vw;
-                font-family:gothamRoundedLight;
-            }
-            .legalesePart2{
-                grid-column-start:1;
-                grid-column-end:7;
-                grid-row-start:5;
-                grid-row-end:6;
-                font-size:2.5vw;
-                font-family:gothamRoundedLight;
-            }
-            .explanation{
-                grid-column-start:1;
-                grid-column-end:7;
-                grid-row-start:10;
-                grid-row-end:11;
-                font-size:3vw;
-            }
-            .confidentiality{
-                grid-column-start:1;
-                grid-column-end:7;
-                grid-row-start:11;
-                grid-row-end:12;
-                font-size:3vw;               
-            }
-        </style>
     </head>
-    <body>
-	<div class="layoutGrid">
-        <div class="logoGraphic w3-spin"></div>
-        <div class="logoText centerXY noselect"><span>singularity</span></div>
-        <div class="legalesePart1 centerXY noselect" style="font-family:gothamRoundedLight;color:white">By tapping "okay fine" you hitherforth agree with our</div>
-        <div class="legalesePart2 centerXY noselect" style="font-family:gothamRoundedLight;color:white"><div onclick="showModal3();" style="text-decoration:underline;">Terms of Service</div>&nbsp;and&nbsp;<a href="https://youtu.be/OMOGaugKpzs?t=15">"Privacy" Policy</a>.</div>
-        <div class="okayFine centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>OKAY FINE</span></div>
-        <div class="loginWith centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>LOG IN WITH SOCIAL SECURITY NUMBER</span></div>
-        <div class="explanation centerXY noselect"><span><a href="#">Watch the commercial</a></span></div>
-        <div class="confidentiality centerXY noselect" style="font-family:gothamRoundedLight;color:white">(We won't tell anyone you're doing this.)</div>
-    </div>
-    <div id="modal3" class="modalGrid3">
-        <div class="termsAndConditionsModal smallRadius">Welcome to the nadir of searching for the basic human needs of love, touch, and understanding. Like a Burger King is to your nutritional health; so too is online dating to your romantic happiness. (or lack thereof) Surely, one may overcome the expenditures of one’s own time, money and mental energy, by, as they say: “putting yourself out there.” But by the gods! Who has time for THAT shit? So let us begin your thumb-sliding journey into the abject HORROR of the personalizes of men on the internet that you will no doubt encounter.</div>
-        <div class="modalExit centerXY" onclick="document.getElementById('modal3').style.visibility='hidden';"><div class="closeButton">&#10007;</div></div>
-        <div class="termsTitle">THE TERMS</div> 
-    </div>
+    <body class="indexPageBody">
+        <div class="indexPageLayoutGrid">
+            <div class="logoGraphic w3-spin"></div>
+            <div class="logoText centerXY noselect"><span>singularity</span></div>
+            <div class="legalesePart1 centerXY noselect" style="font-family:gothamRoundedLight;color:white">By tapping "okay
+                fine" you hitherforth agree with our</div>
+            <div class="legalesePart2 centerXY noselect" style="font-family:gothamRoundedLight;color:white">
+                <div onclick="showModal3();" style="text-decoration:underline;">Terms of Service</div>&nbsp;and&nbsp;<a
+                    href="https://youtu.be/OMOGaugKpzs?t=15">"Privacy" Policy</a>.
+            </div>
+            <div class="okayFine centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>OKAY
+                    FINE</span></div>
+            <div class="loginWith centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>LOG IN
+                    WITH SOCIAL SECURITY NUMBER</span></div>
+            <div class="explanation centerXY noselect"><span><a href="#">Watch the commercial</a></span></div>
+            <div class="confidentiality centerXY noselect" style="font-family:gothamRoundedLight;color:white">(We won't tell
+                anyone you're doing this.)</div>
+        </div>
+        <div id="modal3" class="modalGrid3">
+            <div class="termsAndConditionsModal smallRadius">Welcome to the nadir of searching for the basic human needs of
+                love, touch, and understanding. Like a Burger King is to your nutritional health; so too is online dating to
+                your romantic happiness. (or lack thereof) Surely, one may overcome the expenditures of one’s own time,
+                money and mental energy, by, as they say: “putting yourself out there.” But by the gods! Who has time for
+                THAT shit? So let us begin your thumb-sliding journey into the abject HORROR of the personalizes of men on
+                the internet that you will no doubt encounter.</div>
+            <div class="modalExit centerXY" onclick="document.getElementById('modal3').style.visibility='hidden';">
+                <div class="closeButton">&#10007;</div>
+            </div>
+            <div class="termsTitle">THE TERMS</div>
+        </div>
     </body>
     <script src="js/modal.js"></script>
     <script>
         var touch = {};
-window.onload = function () {
-    "use strict";
-    document.body.addEventListener("touchstart", touchHandler);
-    document.body.addEventListener("touchend", touchHandler);
-};
-function touchHandler(e) {
-    "use strict";
-    var el = e.target;
-    if (el.parentNode.id === "sl-m") {
-        if (e.type === "touchstart") {
-            touch.startX = e.changedTouches[0].screenX;
-            touch.startY = e.changedTouches[0].screenY;
-        } else {
-            touch.endX = e.changedTouches[0].screenX;
-            touch.endY = e.changedTouches[0].screenY;
-            touch.lenX = Math.abs(touch.endX - touch.startX);
-            touch.lenY = Math.abs(touch.endY - touch.startY);
-            if (touch.lenY < 20) {
-                // disable scroll
-                document.body.style.overflowY = "hidden";
-                // do swipe related stuff
-                swipe(el.parentNode);
+        window.onload = function () {
+            "use strict";
+            document.body.addEventListener("touchstart", touchHandler);
+            document.body.addEventListener("touchend", touchHandler);
+        };
+        function touchHandler(e) {
+            "use strict";
+            var el = e.target;
+            if (el.parentNode.id === "sl-m") {
+                if (e.type === "touchstart") {
+                    touch.startX = e.changedTouches[0].screenX;
+                    touch.startY = e.changedTouches[0].screenY;
+                } else {
+                    touch.endX = e.changedTouches[0].screenX;
+                    touch.endY = e.changedTouches[0].screenY;
+                    touch.lenX = Math.abs(touch.endX - touch.startX);
+                    touch.lenY = Math.abs(touch.endY - touch.startY);
+                    if (touch.lenY < 20) {
+                        // disable scroll
+                        document.body.style.overflowY = "hidden";
+                        // do swipe related stuff
+                        swipe(el.parentNode);
+                    } else {
+                        // enable scroll if swipe was not intended
+                        document.body.style.overflowY = "scroll";
+                    }
+                }
             } else {
-                // enable scroll if swipe was not intended
+                // keep scroll enabled if touch is outside the image slider 
                 document.body.style.overflowY = "scroll";
             }
         }
-    } else {
-        // keep scroll enabled if touch is outside the image slider 
-        document.body.style.overflowY = "scroll";
-    }
-}
     </script>
 </html>
