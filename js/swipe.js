@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             updateUi();
             currentElement();
             setActiveHidden();
-            showModal();
+            showModal("matchModal");
         };
 
         //Swipe active card to top.
@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             updateUi();
             currentElement();
             setActiveHidden();
-            showModal();
+            showModal("matchModal");
         };
 
         //Remove transitions from all elements to be moved in each swipe movement to improve perfomance of stacked cards.
