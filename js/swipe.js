@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         function changeOnClick(){
             if(cardCount == document.getElementsByClassName("card-item").length - 1){
                 document.getElementsByClassName("verticalCenteringDiv")[0].style.visibility="hidden";
-                document.getElementById("modal2").style.zIndex = "0";
+                document.getElementById("socialMediaModal").style.zIndex = "0";
                 return;
             }
             cardCount += 1;
@@ -726,5 +726,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     stackedCards();
-    setTimeout(function(){ document.getElementById("modal2").style.visibility = "visible"; }, 1000);
+    setTimeout(function(){ document.getElementById("socialMediaModal").style.visibility = "visible"; }, 1000);
 });
