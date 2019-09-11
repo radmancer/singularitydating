@@ -12,19 +12,14 @@
         <div class="indexPageLayoutGrid">
             <div class="logoGraphic w3-spin"></div>
             <div class="logoText centerXY noselect"><span>singularity</span></div>
-            <div class="legalesePart1 centerXY noselect" style="font-family:gothamRoundedLight;color:white">By tapping "okay
-                fine" you hitherforth agree with our</div>
+            <div class="legalesePart1 centerXY noselect" style="font-family:gothamRoundedLight;color:white">By tapping "okay fine" you hitherforth agree with our</div>
             <div class="legalesePart2 centerXY noselect" style="font-family:gothamRoundedLight;color:white">
-                <div onclick="showModal('genericModal');" style="text-decoration:underline;">Terms of Service</div>&nbsp;and&nbsp;<a
-                    href="https://youtu.be/OMOGaugKpzs?t=15">"Privacy" Policy</a>.
+                <div onclick="showModal('genericModal');" style="text-decoration:underline;">Terms of Service</div>&nbsp;and&nbsp;<a href="https://youtu.be/OMOGaugKpzs?t=15">"Privacy" Policy</a>.
             </div>
-            <div class="okayFine centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>OKAY
-                    FINE</span></div>
-            <div class="loginWith centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>LOG IN
-                    WITH SOCIAL SECURITY NUMBER</span></div>
+            <div class="okayFine centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>OKAY FINE</span></div>
+            <div class="loginWith centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>LOG IN WITH SOCIAL SECURITY NUMBER</span></div>
             <div class="explanation centerXY noselect"><span><a href="#">Watch the commercial</a></span></div>
-            <div class="confidentiality centerXY noselect" style="font-family:gothamRoundedLight;color:white">(We won't tell
-                anyone you're doing this.)</div>
+            <div class="confidentiality centerXY noselect" style="font-family:gothamRoundedLight;color:white">(We won't tell anyone you're doing this.)</div>
         </div>
         <div id="genericModal" class="genericModal">
             <div class="termsAndConditionsText smallRadius">Welcome to the nadir of searching for the basic human needs of
@@ -32,7 +27,8 @@
                 your romantic happiness. (or lack thereof) Surely, one may overcome the expenditures of one’s own time,
                 money and mental energy, by, as they say: “putting yourself out there.” But by the gods! Who has time for
                 THAT shit? So let us begin your thumb-sliding journey into the abject HORROR of the personalizes of men on
-                the internet that you will no doubt encounter.</div>
+                the internet that you will no doubt encounter.
+            </div>
             <div class="modalExit centerXY" onclick="document.getElementById('genericModal').style.visibility='hidden';">
                 <div class="closeButton">&#10007;</div>
             </div>
@@ -40,39 +36,4 @@
         </div>
     </body>
     <script src="js/modal.js"></script>
-    <script>
-        var touch = {};
-        window.onload = function () {
-            "use strict";
-            document.body.addEventListener("touchstart", touchHandler);
-            document.body.addEventListener("touchend", touchHandler);
-        };
-        function touchHandler(e) {
-            "use strict";
-            var el = e.target;
-            if (el.parentNode.id === "sl-m") {
-                if (e.type === "touchstart") {
-                    touch.startX = e.changedTouches[0].screenX;
-                    touch.startY = e.changedTouches[0].screenY;
-                } else {
-                    touch.endX = e.changedTouches[0].screenX;
-                    touch.endY = e.changedTouches[0].screenY;
-                    touch.lenX = Math.abs(touch.endX - touch.startX);
-                    touch.lenY = Math.abs(touch.endY - touch.startY);
-                    if (touch.lenY < 20) {
-                        // disable scroll
-                        document.body.style.overflowY = "hidden";
-                        // do swipe related stuff
-                        swipe(el.parentNode);
-                    } else {
-                        // enable scroll if swipe was not intended
-                        document.body.style.overflowY = "scroll";
-                    }
-                }
-            } else {
-                // keep scroll enabled if touch is outside the image slider 
-                document.body.style.overflowY = "scroll";
-            }
-        }
-    </script>
 </html>
