@@ -30,12 +30,11 @@
     grid-row-end:4;
     font-size:3.5vw;
     color:white;
-    padding-left:8vw;
 }
 .socialMediaModal{
     display:grid;
     grid-template-columns:20vw 20vw 20vw 20vw 20vw;
-    grid-template-rows:10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    grid-template-rows:10vh 10vh 10vh 10vh 5vh 10vh 10vh 10vh 10vh 15vh;
     position: absolute;
     left: 0px;
     top: 0px;
