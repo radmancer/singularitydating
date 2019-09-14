@@ -34,7 +34,7 @@
 .socialMediaModal{
     display:grid;
     grid-template-columns:20vw 20vw 20vw 20vw 20vw;
-    grid-template-rows:10vh 10vh 10vh 10vh 5vh 10vh 10vh 10vh 10vh 15vh;
+    grid-template-rows:10vh 10vh 10vh 5vh 5vh 10vh 10vh 10vh 10vh 10vh 10vh;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -47,35 +47,41 @@
     grid-row-start:4;
     grid-row-end:5;
 }
-.thisIsaJokePartDeux{
+.thisIsaJokeSubTitle{
     grid-column-start:2;
     grid-column-end:5;
     grid-row-start:5;
     grid-row-end:6;
 }
+.thisIsaJokePartDeux{
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:6;
+    grid-row-end:7;
+}
 .facebookIcon{
     grid-column-start:2;
     grid-column-end:3;
-    grid-row-start:6;
-    grid-row-end:7;
+    grid-row-start:7;
+    grid-row-end:8;
 }
 .facebookLink{
     grid-column-start:3;
     grid-column-end:5;
-    grid-row-start:6;
-    grid-row-end:7;
+    grid-row-start:7;
+    grid-row-end:8;
 }
 .emailIcon{
     grid-column-start:2;
     grid-column-end:3;
-    grid-row-start:7;
-    grid-row-end:8;
+    grid-row-start:8;
+    grid-row-end:9;
 }
 .emailLink{
     grid-column-start:3;
     grid-column-end:5;
-    grid-row-start:7;
-    grid-row-end:8;
+    grid-row-start:8;
+    grid-row-end:9;
 }
 .genericModal{
     display:grid;
