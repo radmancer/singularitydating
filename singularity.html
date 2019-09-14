@@ -54,7 +54,7 @@
 					<use xlink:href="#icon-facebook2"></use>
 				</svg>
 			</div>
-			<div class="facebookLink centerXY"><a href="fb://page/PAGEID/100008961168204" style="color:white;font-size:5vw;">Aaron Smith</a></div>
+			<div class="facebookLink centerXY"><a id="facebookLink" href="#" style="color:white;font-size:5vw;">Aaron Smith</a></div>
 			<div class="emailIcon centerXY">
 				<svg width="8vw" height="8vw" fill="white">
 					<symbol id="icon-google" viewBox="0 0 32 32">
@@ -85,4 +85,38 @@
 	</script>
 	<script src="js/modal.js"></script>
 	<script src="js/media.js"></script>
+	<script>
+		/**
+		* Determine the mobile operating system.
+		* This function returns one of 'iOS', 'Android', 'Windows Phone', or 'unknown'.
+		*
+		* @returns {String}
+		*/
+		function getMobileOperatingSystem() {
+		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+			// Windows Phone must come first because its UA also contains "Android"
+			if (/windows phone/i.test(userAgent)) {
+				return "Windows Phone";
+			}
+
+			if (/android/i.test(userAgent)) {
+				return "Android";
+			}
+
+			// iOS detection from: http://stackoverflow.com/a/9039885/177710
+			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				return "iOS";
+			}
+
+			return "unknown";
+		}
+		var osType = getMobileOperatingSystem();
+		if(osType == "iOS"){
+			document.getElementById("facebookLink").setAttribute('href', "fb://profile/dropcaddict");
+		}
+		else if(osType == "Android"){
+			document.getElementById("facebookLink").setAttribute('href', "fb://page/dropcaddict");
+		}
+	</script>
 </html>
