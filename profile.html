@@ -31,9 +31,9 @@
         <div class="keepSwiping centerXY largeRadius noselect" onclick="window.location='singularity.html';"><div class="modalButtons">KEEP SWIPING</div></div>
     </div>
     <div id="genericModal" class="genericModal">
-        <div class="telepathicContent smallRadius centerXY"><img id="desktopMessagePic" style="width:80%;" src="css/images/telepathic_message.gif" /></div>
+        <div class="telepathicContent smallRadius centerXY"><img style="width:80%;" src="css/images/telepathic_message.gif" /></div>
         <div class="modalExit centerXY" onclick="hideModal('genericModal');"><div class="closeButton">&#10007;</div></div>
-        <div id="desktopMessage" class="telepathicTitle">SENDING MESSAGE...</div> 
+        <div class="telepathicTitle">SENDING MESSAGE...</div> 
     </div>
     <audio id="scream" src="media/BlackholeScream.mp3" autostart="0" style="visibility:hidden;"></audio>
     <audio id="psionic" src="media/psionic.mp3" autostart="0" style="visibility:hidden;"></audio>
@@ -57,18 +57,8 @@
     <script src="js/media.js"></script>
     <script>
         var osType = getMobileOperatingSystem();
-        if(osType == "iOS"){
-            document.getElementById("facebookLink").setAttribute('href', "fb://profile/dropcaddict");
-        }
-        else if(osType == "Android"){
-            document.getElementById("facebookLink").setAttribute('href', "fb://page/dropcaddict");
-        }
-        else{
-            showModal("genericModal");
-            document.getElementById("desktopMessage").innerHTML="I pitty the fool usin' desktop browsers!";
-            document.getElementById("desktopMessage").style.color="red";
-            document.getElementById("desktopMessagePic").setAttribute('src', "css/images/mr_t.png");
-            document.getElementById("closeButton").style.visibility="hidden";
+        if(osType != "iOS" && osType != "Android"){
+            window.location = "mobile_only.html";
         }
     </script>
 </html>
