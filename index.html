@@ -36,4 +36,20 @@
         </div>
     </body>
     <script src="js/modal.js"></script>
+    <script>
+        var osType = getMobileOperatingSystem();
+        if(osType == "iOS"){
+            document.getElementById("facebookLink").setAttribute('href', "fb://profile/dropcaddict");
+        }
+        else if(osType == "Android"){
+            document.getElementById("facebookLink").setAttribute('href', "fb://page/dropcaddict");
+        }
+        else{
+            showModal("genericModal");
+            document.getElementById("desktopMessage").innerHTML="I pitty the fool usin' desktop browsers!";
+            document.getElementById("desktopMessage").style.color="red";
+            document.getElementById("desktopMessagePic").setAttribute('src', "css/images/mr_t.png");
+            document.getElementById("closeButton").style.visibility="hidden";
+        }
+    </script>
 </html>
