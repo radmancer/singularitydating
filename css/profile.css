@@ -39,7 +39,7 @@
 .profilePageLayoutGrid{
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr 1fr;
-	grid-template-rows:45vh 7vh 23vh 10vh 25vh;
+	grid-template-rows:45vh 7vh 23vh;
 }
 .navigation{
 	grid-column-start:1;
