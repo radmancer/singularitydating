@@ -25,8 +25,8 @@
         </div>
     </div>
     <div id="matchModal" class="modalGrid">
-        <div class="matchTitle centerXY">It's a Match!</div>
-        <div class="matchSubtitle centerXY">Who didn't see THAT coming?</div>
+        <div id="matchTitle" class="matchTitle centerXY">It's a Match!</div>
+        <div id="matchSubTitle" class="matchSubtitle centerXY">Who didn't see THAT coming?</div>
         <div class="sendMessage centerXY largeRadius noselect" onclick="showModal('genericModal');playSound('psionic');setTimeout(function(){ hideModal('genericModal'); }, 3500);"><div class="modalButtons">SEND TELEPATHIC MESSAGE</div></div>
         <div class="keepSwiping centerXY largeRadius noselect" onclick="window.location='singularity.html';"><div class="modalButtons">KEEP SWIPING</div></div>
     </div>
@@ -43,6 +43,7 @@
     </body>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
+        const joke = urlParams.get("joke");
         const id = urlParams.get("id");
         const image = urlParams.get("image");
         document.getElementById("profile").style.backgroundImage = "url('css/images/" + image + "')";
@@ -52,6 +53,10 @@
         document.getElementById("nameAndAge").innerHTML = name + ", " + age;
         document.getElementById("profileText").innerHTML = profileText;
         sessionStorage.id = id;
+        if(joke == "true"){
+            document.getElementById("matchTitle").innerHTML = "So, we lied...";
+            document.getElementById("matchSubTitle").innerHTML = "Aaron is a master of disguise.";
+        }
     </script>
     <script src="js/modal.js"></script>
     <script src="js/media.js"></script>
