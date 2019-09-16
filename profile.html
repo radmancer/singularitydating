@@ -16,7 +16,7 @@
         <!--Profile Text Character Limit: 162-->
         <div id="profileText" class="profileText"></div>
         <div class="navigation">
-            <div class="global-actions">
+            <div class="global-actions" style="vertical-align:top;">
                 <div class="left-action" onclick="playSound('skip');setTimeout(function(){ window.location='singularity.html'; }, 1500);"><div class="button">&#10007;</div></div>
                 <div class="blackhole-action" onclick="playSound('scream');setTimeout(function(){ window.location='singularity.html'; }, 3000);"><img style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
                 <div class="top-action" onclick="playSound('duck');showModal('matchModal');"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
@@ -26,7 +26,7 @@
     </div>
     <div id="matchModal" class="modalGrid">
         <div class="matchTitle centerXY">It's a Match!</div>
-        <div class="matchSubtitle">maybe... (you've seen this before)</div>
+        <div class="matchSubtitle centerXY">Who didn't see THAT coming?</div>
         <div class="sendMessage centerXY largeRadius noselect" onclick="showModal('genericModal');playSound('psionic');setTimeout(function(){ hideModal('genericModal'); }, 3500);"><div class="modalButtons">SEND TELEPATHIC MESSAGE</div></div>
         <div class="keepSwiping centerXY largeRadius noselect" onclick="window.location='singularity.html';"><div class="modalButtons">KEEP SWIPING</div></div>
     </div>
