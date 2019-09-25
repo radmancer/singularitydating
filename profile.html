@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html lang="en-US">
     <head>
         <!--Written and Directed By James Scott McDowell-->
         <title>Singularity</title>
@@ -40,7 +40,6 @@
     <audio id="skip" src="media/skip.mp3" autostart="0" style="visibility:hidden;"></audio>
     <audio id="like" src="media/Like.mp3" autostart="0" style="visibility:hidden;"></audio>
     <audio id="duck" src="media/duck.mp3" autostart="0" style="visibility:hidden;"></audio>
-    </body>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const joke = urlParams.get("joke");
@@ -57,13 +56,14 @@
             document.getElementById("matchTitle").innerHTML = "So, we lied...";
             document.getElementById("matchSubTitle").innerHTML = "Aaron is a master of disguise.";
         }
-    </script>
-    <script src="js/modal.js"></script>
-    <script src="js/media.js"></script>
-    <script>
-        var osType = getMobileOperatingSystem();
-        if(osType != "iOS" && osType != "Android"){
-            window.location = "mobile_only.html";
-        }
-    </script>
+        </script>
+        <script src="js/modal.js"></script>
+        <script src="js/media.js"></script>
+        <script>
+            var osType = getMobileOperatingSystem();
+            if(osType != "iOS" && osType != "Android"){
+                window.location = "mobile_only.html";
+            }
+        </script>
+    </body>
 </html>

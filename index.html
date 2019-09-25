@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html lang="en-US">
     <head>
         <!--Written and Directed By James Scott McDowell-->
         <title>Singularity</title>
@@ -34,12 +34,12 @@
             </div>
             <div class="termsTitle">THE TERMS</div>
         </div>
+        <script src="js/modal.js"></script>
+        <script>
+            var osType = getMobileOperatingSystem();
+            if(osType != "iOS" && osType != "Android"){
+                window.location = "mobile_only.html";
+            }
+        </script>
     </body>
-    <script src="js/modal.js"></script>
-    <script>
-        var osType = getMobileOperatingSystem();
-        if(osType != "iOS" && osType != "Android"){
-            window.location = "mobile_only.html";
-        }
-    </script>
 </html>
