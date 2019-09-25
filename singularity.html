@@ -1,4 +1,5 @@
-<!DOCTYPE html lang="en-US">
+<!DOCTYPE html>
+<html lang="en-US">
 	<head>
 		<!--Written and Directed By James Scott McDowell-->
 		<link rel="stylesheet" href="css/radlab.css">
@@ -76,19 +77,19 @@
 		<audio id="skip" src="media/skip.mp3" autostart="0" style="visibility:hidden;"></audio>
 		<audio id="like" src="media/Like.mp3" autostart="0" style="visibility:hidden;"></audio>
 		<audio id="duck" src="media/duck.mp3" autostart="0" style="visibility:hidden;"></audio>
+		<script>
+			var cardArray = document.getElementsByClassName("card-item");
+			for(var i = 0; i < cardArray.length; i++){
+				cardArray[i].style.backgroundImage = "url('css/images/" + i + ".jpg')";
+			}
+		</script>
+		<script src="js/modal.js"></script>
+		<script src="js/media.js"></script>
+		<script>
+			var osType = getMobileOperatingSystem();
+			if(osType != "iOS" && osType != "Android"){
+				window.location = "mobile_only.html";
+			}
+		</script>
 	</body>
-	<script>
-	    var cardArray = document.getElementsByClassName("card-item");
-		for(var i = 0; i < cardArray.length; i++){
-			cardArray[i].style.backgroundImage = "url('css/images/" + i + ".jpg')";
-		}
-	</script>
-	<script src="js/modal.js"></script>
-	<script src="js/media.js"></script>
-    <script>
-		var osType = getMobileOperatingSystem();
-		if(osType != "iOS" && osType != "Android"){
-			window.location = "mobile_only.html";
-		}
-	</script>
 </html>
