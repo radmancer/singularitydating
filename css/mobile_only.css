@@ -2,7 +2,7 @@
 	height: 100%;
 	width: 100%;
 	display: table;
-	background-image: linear-gradient(rgba(0,0,0,0) 10%, rgba(0,0,0,1)), linear-gradient(rgba(0,0,0,0) 10%, rgba(0,0,0,1)), radial-gradient(ellipse, #00fd00 1%, black 99%);
+	background-image: linear-gradient(rgba(0,0,0,0) 65%, rgba(0,0,0,1)), linear-gradient(rgba(0,0,0,0) 10%, rgba(0,0,0,1)), radial-gradient(ellipse, #00fd00 1%, black 99%);
 	background-size: 100% 125%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
