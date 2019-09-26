@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<html>
 	<head>
 		<!--Written and Directed By James Scott McDowell-->
-		<title>Singularity</title>
 		<link rel="stylesheet" href="css/radlab.css">
 		<link rel="stylesheet" href="css/w3.css">
 		<link rel="stylesheet" href="css/swipe.css">
@@ -21,19 +19,19 @@
 					<div class="card-item"><input type="hidden" id="cardInput3" value="?id=3&image=3.jpg&name=Aaron&age=24&profile= I would give anything to never hear Africa by Toto ever again. Fun fact: I was born without a second kidney."><span class="nameAgeProfession">Aaron, 31<br>Gainfully Employed</span></div>
 					<div class="card-item"><input type="hidden" id="cardInput4" value="?id=4&image=4.jpg&name=Aaron&age=27&profile=I’d to crowdfund billboards around town that say basically nothing. Ideas:&quot;Is Marcy Playground still a thing?&quot;&quot;I forgot what I was gonna say.&quot;&quot;Do you have change? All I have is a $20&quot;"><span class="nameAgeProfession">Aaron, 31<br>Gainfully Employed</span></div>
 					<div class="card-item"><input type="hidden" id="cardInput5" value="?id=5&image=5.jpg&name=Aaron&age=42&profile=If I were any more strung out on the democratic primary I’d be huffing it from a brown paper bag."><span class="nameAgeProfession">Aaron, 31<br>Gainfully Employed</span></div>
-					<div class="card-item"><input type="hidden" id="cardInput6" value="?joke=true&id=6&image=6.jpg&name=Corey&age=29&profile=Let's tour a brewery."><span class="nameAgeProfession">Corey, 29<br>Singer-songwriter at Gawdawful</span></div>
-					<div class="card-item"><input type="hidden" id="cardInput7" value="?joke=true&id=7&image=7.jpg&name=Jeremy&age=33&profile=Is this guy really doin' it for 'ya?"><span class="nameAgeProfession">Jeremy, 33<br>Entrepenuer at Vector Marketing</span></div>
+					<div class="card-item"><input type="hidden" id="cardInput6" value="?joke=true&id=6&image=6.jpg&name=Corey&age=29&profile=I enjoy long walks on the beaches of Centurion 7B: soaking up the Hawking Radiation after a long day of automation maintenance. Life is hard when you have to press 7 buttons a day, or when the robot that cleans the robot cleaning robots has broken down."><span class="nameAgeProfession">Corey, 29<br>Singer-songwriter at Gawdawful</span></div>
+					<div class="card-item"><input type="hidden" id="cardInput7" value="?joke=true&id=7&image=7.jpg&name=Jeremy&age=33&profile=I enjoy long walks on the beaches of Centurion 7B: soaking up the Hawking Radiation after a long day of automation maintenance. Life is hard when you have to press 7 buttons a day, or when the robot that cleans the robot cleaning robots has broken down."><span class="nameAgeProfession">Jeremy, 33<br>Entrepenuer at Vector Marketing</span></div>
 					<div class="card-item"><input type="hidden" id="cardInput8" value="?id=8&image=8.jpg&name=Aaron again&age=31&profile=Do you remember that one episode of Family Matters where Donna Summer played Steve’s Aunt Oona from Altoona and she entered that talent show? That was such a good episode. I wish I still had that autographed photo of Jaleel White."><span class="nameAgeProfession">Aaron again, 31<br>Yeah... Still here.</span></div>
 					<div class="card-item"><input type="hidden" id="cardInput9" value="?joke=true&id=9&image=9.jpg&name=Artyom&age=37&profile=Dasvidaniya. I am all-American guy who enjoys Chicago Bulls, eating hotdog and doing moonwalk. Let us discuss true love and Facebook password over dinner of hamburger and several sticks made from potato."><span class="nameAgeProfession">Artyom, 37<br>Engineer at Internet Research Agency</span></div>
 				</div>
 				<div class="stackedcards--animatable stackedcards-overlay top" style="font-family:gothamRoundedMedium;">Hell yeah!</div>
-				<div class="stackedcards--animatable stackedcards-overlay right" style="font-family:gothamRoundedMedium;">Sure</div>
+				<div class="stackedcards--animatable stackedcards-overlay right" style="font-family:gothamRoundedMedium;">Okay fine</div>
 				<div id="cardN" onclick="document.location='profile.html?id=0&&image=0.jpg&name=Aaron&age=888&profile=Highly eccentric goofball. I have a ridiculous sense of humor and I am very friendly. Super duper liberal political junkie. I play several instruments and produce recordings for bands in my spare time. I also occasionally shoot comedy sketches.';sessionStorage.setItem('firstCardExpired', 'true');" class="stackedcards--animatable stackedcards-overlay left" style="font-family:gothamRoundedMedium;z-index:666;">My mom thinks I'm cool...</div>
 			</div>
 			<div class="global-actions" style="margin-top:4vh;">
 				<div class="left-action" onclick="playSound('skip');"><div class="button">&#10007;</div></div>
-				<div class="blackhole-action" onclick="playSound('scream');"><img alt="A button depecting a cartoon black hole." style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
-				<div class="top-action" onclick="showModal('matchModal');playSound('duck');"><div class="button"><img alt="A button depecting a cartoon rubber duck." style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
+				<div class="blackhole-action" onclick="playSound('scream');"><img style="width:10vw;height:10vw;filter:invert(100%);" src="css/images/black_hole.png" /></div>
+				<div class="top-action" onclick="showModal('matchModal');playSound('duck');"><div class="button"><img style="width:10vw;height:10vw;" src="css/images/duck.svg" /></div></div>
 				<div class="right-action" onclick="showModal('matchModal');playSound('like');"><div class="button">&#x2714;</div></div>
 			</div>
 		</div>
@@ -45,7 +43,7 @@
 		</div>
 		<div id="socialMediaModal" class="socialMediaModal">
 			<div class="thisIsaJoke centerX"><span style="font-size:6vw;">Yes, this is a joke...</span></div>
-			<div class="thisIsaJokeSubTitle centerX"><span style="font-size:4vw;">(But what if it isn't?)</span></div>
+			<div class="thisIsaJokeSubTitle centerX"><span style="font-size:4vw;">(But oh, what if it isn't?)</span></div>
 			<div class="thisIsaJokePartDeux centerX" style="position:relative;"><span style="font-size:3.2vw;position:absolute;bottom:0;padding-bottom:1vh;">Anyways, here's how to find me: </span></div>
 			<div class="facebookIcon centerXY">
 				<svg width="8vw" height="8vw" fill="white">
@@ -56,7 +54,7 @@
 					<use xlink:href="#icon-facebook2"></use>
 				</svg>
 			</div>
-			<div class="facebookLink centerXY"><a id="facebookLink" href="https://www.facebook.com/dropcaddict" style="color:white;font-size:5vw;">Aaron Smith</a></div>
+			<div class="facebookLink centerXY"><a id="facebookLink" href="#" style="color:white;font-size:5vw;">Aaron Smith</a></div>
 			<div class="emailIcon centerXY">
 				<svg width="8vw" height="8vw" fill="white">
 					<symbol id="icon-google" viewBox="0 0 32 32">
@@ -69,28 +67,28 @@
 			<div class="emailLink centerXY" style="color:white;font-size:3.5vw">singularitydating@gmail.com</div>
 		</div>
 		<div id="genericModal" class="genericModal">
-			<div class="telepathicContent smallRadius centerXY"><img alt="A man comically shooting lasers out of his eyes." style="width:80%;" src="css/images/telepathic_message.gif" /></div>
+			<div class="telepathicContent smallRadius centerXY"><img style="width:80%;" src="css/images/telepathic_message.gif" /></div>
 			<div class="modalExit centerXY" onclick="document.getElementById('genericModal').style.visibility='hidden';"><div id="closeButton" class="closeButton">&#10007;</div></div>
-			<div class="telepathicTitle">SENDING MESSAGE...</div>
+			<div class="telepathicTitle">SENDING MESSAGE...</div> 
 		</div>
 		<audio id="scream" src="media/BlackholeScream.mp3" autostart="0" style="visibility:hidden;"></audio>
 		<audio id="psionic" src="media/psionic.mp3" autostart="0" style="visibility:hidden;"></audio>
 		<audio id="skip" src="media/skip.mp3" autostart="0" style="visibility:hidden;"></audio>
 		<audio id="like" src="media/Like.mp3" autostart="0" style="visibility:hidden;"></audio>
 		<audio id="duck" src="media/duck.mp3" autostart="0" style="visibility:hidden;"></audio>
-		<script>
-			var cardArray = document.getElementsByClassName("card-item");
-			for(var i = 0; i < cardArray.length; i++){
-				cardArray[i].style.backgroundImage = "url('css/images/" + i + ".jpg')";
-			}
-		</script>
-		<script src="js/modal.js"></script>
-		<script src="js/media.js"></script>
-		<script>
-			var osType = getMobileOperatingSystem();
-			if(osType != "iOS" && osType != "Android"){
-				window.location = "mobile_only.html";
-			}
-		</script>
 	</body>
+	<script>
+	    var cardArray = document.getElementsByClassName("card-item");
+		for(var i = 0; i < cardArray.length; i++){
+			cardArray[i].style.backgroundImage = "url('css/images/" + i + ".jpg')";
+		}
+	</script>
+	<script src="js/modal.js"></script>
+	<script src="js/media.js"></script>
+    <script>
+		var osType = getMobileOperatingSystem();
+		if(osType != "iOS" && osType != "Android"){
+			//window.location = "mobile_only.html";
+		}
+	</script>
 </html>
