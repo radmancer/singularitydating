@@ -12,6 +12,13 @@
     /* align vertical */
     align-items:center;
 }
+.centerDivXY{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 .centerX{
     display:flex;
     /* align horizontal */
