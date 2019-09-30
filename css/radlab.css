@@ -6,11 +6,11 @@
 }
 /*Centering on both axises only works on divs.*/
 .centerXY{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display:flex;
+    /* align horizontal */
+    justify-content:center;
+    /* align vertical */
+    align-items:center;
 }
 .centerX{
     display:flex;
